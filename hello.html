@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>  MINISTARY OF HOUSING AND URBAN AFFAIRS</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-image: url("img-3.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    h1 {
+      text-align: center;
+      color: aliceblue;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      color: aliceblue;
+    }
+
+    .feature {
+        width: 25%;
+      padding: 10px;
+      color: antiquewhite;
+    }
+
+    .feature img {
+      width: 100%;
+      height: 100%;
+      color: aliceblue;
+    }
+
+    .contact-form {
+      margin-top: 20px;
+      color: aliceblue;
+      
+    }
+    .contact-form h3,h2{
+        margin-left: 500px;
+        color: aliceblue;
+    }
+.contact-form h3{
+margin-left:600px;
+}
+.contact-form h4{
+margin-left:350px;
+}
+
+    .contact-form input {
+        width: 50%;
+      padding: 10px;
+      margin-left: 300px;
+      margin-bottom: 10px;
+      color: aliceblue;
+
+    }
+    .dept{
+        margin-left: 600px;
+        padding:20px;
+    }
+
+    .contact-form button {
+        width: 50%;
+      padding: 10px;
+      margin-left: 300px;
+      background-color: blue;
+      color: white;
+    }
+    .hey{
+        margin-left: 5px;
+        padding-top:10px;
+        
+    }
+ 
+  </style>
+</head>
+<body>
+ 
+  <h1>AI-BASED CENTRALISED CHATBOT</h1>
+
+  
+
+  <div class="contact-form">
+  
+    <h3>WELCOME</h3>
+    <h4>YOU CAN EITHER ENTER THE DETAILS OF YOUR ISSUE BELOW OR USE OUR CHATBOT</h4>
+    <form action="/contact" method="post">
+      <input type="text" name="name" placeholder="Name">
+      <input type="tel" name="phone number" placeholder="ph">
+
+<div class="hey"> <input type="text" name="issue" placeholder="please enter youre issue here"></div>
+      <div class="dept">
+        <label for="STATE">STATE</label>
+        <select id="STATE" name="STATE">
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+        </select>
+        </div>
+
+    
+        <form action="/contact" method="post" onsubmit="handleFormSubmit();">
+      <button type="submit">Submit</button></form>
+    </form>
+  </div>
+</body>
+</html>
+<script type="text/javascript">
+    (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+          window.voiceflow.chat.load({
+            verify: { projectID: '6511086b07e39a0007a31b06' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production'
+          });
+        }
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
